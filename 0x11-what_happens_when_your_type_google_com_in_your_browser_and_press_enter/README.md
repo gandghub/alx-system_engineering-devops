@@ -39,3 +39,27 @@ File: 0-blog_post
 
 
 https://www.linkedin.com/posts/gemechis-garuma-114770289_google-activity-7200503082596605953-2Or2?utm_source=share&utm_medium=member_desktop
+
+1. Everything's better with a pretty diagram
+Add a schema to your blog post illustrating the flow of the request created when you type https://www.google.com in your browser and press Enter.
+
+The diagram should show:
+
+DNS resolution
+that the request hitting server IP on the appropriate port
+that the traffic is encrypted
+that the traffic goes through a firewall
+that the request is distributed via a load balancer
+that the web server answers the request by serving a web page
+that the application server generates the web page
+that the application server request data from the database
+Gliffy is free and what I personally use, but feel free to use what fits you best.
+
+Some unrelated examples:
+Repo:
+
+GitHub repository: alx-system_engineering-devops
+Directory: 0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter
+File: 1-what_happen_when_diagram
+https://imgur.com/a/7fOvvBl
+
