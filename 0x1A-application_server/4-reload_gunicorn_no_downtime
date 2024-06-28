@@ -11,6 +11,8 @@ if [ -z "$PIDS" ]; then
 fi
 
 # Send the SIGHUP signal to the master process to reload gracefully
-echo "$PIDS" | xargs -r kill -HUP
+for PID in $PIDS; do
+  kill -HUP $PID
+done
 
 echo "Gunicorn gracefully reloaded."
