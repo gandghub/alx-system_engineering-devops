@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Gracefully reloads Gunicorn.
 
-# Find the master Gunicorn process PID using pgrep
+# Find the master Gunicorn process PID
 PIDS=$(pgrep -f "gunicorn" | grep -v grep | grep -v "reload_gunicorn")
 
 # Check if PIDs are found
@@ -16,3 +16,4 @@ for PID in $PIDS; do
 done
 
 echo "Gunicorn gracefully reloaded."
+
